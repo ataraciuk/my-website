@@ -1,0 +1,10 @@
+canvas {
+	width: 0px;
+	height: 0px;
+	background: transparent;
+	position: fixed;
+	display: none;
+}
+.section {
+	display: none;
+}
