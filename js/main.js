@@ -7,6 +7,12 @@ andrest.init = function() {
 	window.onhashchange = function(){
 		var section = location.hash;
 	};
+	$('#projects a').hover(function(){
+		$(this).children().children('div').show();
+	},
+	function(){
+		$(this).children().children('div').hide();
+	});
 }
 
 $(function() {
