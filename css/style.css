@@ -43,6 +43,7 @@ table {
 
 body {
 	background-color:  #E6E6E6;
+	cursor: url('../pointer.cur'), auto;
 }
 #main {
 	position: relative;
@@ -52,6 +53,11 @@ body {
 	padding: 10px;
 	z-index: 2;
 	background-color: white;
+	border-bottom: 2px solid #17a357;
+}
+#header > a {
+	display: inline-block;
+	margin-bottom: -3px;
 }
 #header h1 {
 	font-size: 24px;
@@ -89,9 +95,9 @@ body {
 	clear: both;
 }
 a {
-	color: #17a357;
+	color: #7bd01d;
 	text-decoration: none;
 }
 a:hover{
-	color: #7bd01d;
+	color: #17a357;
 }
