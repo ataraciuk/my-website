@@ -97,8 +97,9 @@ html, body {
 }
 h2 {
 	color: #17a357;
-	font-size: 20px;
-	letter-spacing: 2px;
+	font-size: 30px;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 0 black;
 }
 .clear {
 	clear: both;
@@ -162,22 +163,42 @@ a:hover{
 	margin: 0 auto;
 	background: white;
 	position: relative;
+	display: table;
 }
 #overlay #overlay-content {
 	position: relative;
-	margin: 0 10px;
+	margin: 10px 2px;
 
 }
 #overlay #overlay-controls {
 	text-align: center;
+	float: right;
+	position: relative;
+	z-index: 2;
 }
-#overlay #close-overlay {
-	margin: 0 25%;
-}
-#overlay #overlay-controls a {
+#overlay a.overlay-control {
 	cursor: pointer;
-	font-size: 50px;
+	font-size:30px;
+	display: block;
+	background-color: #7bd01d;
+	color: white;
+	margin: 2px 2px 0 0;
+	height: 40px;
+	width: 40px;
+	float: left;
+    -webkit-box-shadow: 1px 1px 0 black;
+    -moz-box-shadow: 1px 1px 0 black;
+    box-shadow: 1px 1px 0 black;
+}
+#overlay a.overlay-control:hover {
+    background-color:#17a357;
 }
 #overlay-items {
 	display: none;
+}
+.left {
+	float:left;
+}
+.right {
+	float:right;
 }
