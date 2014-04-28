@@ -97,9 +97,9 @@ html, body {
 }
 h2 {
 	color: #17a357;
-	font-size: 30px;
+	font-size: 34px;
 	letter-spacing: 1px;
-	text-shadow: 1px 1px 0 black;
+	background-color: black;
 }
 .clear {
 	clear: both;
@@ -125,7 +125,7 @@ a:hover{
 	border-radius: 5px;
 	cursor: pointer;
 	padding: 5px 0;
-	font-size: 12px;
+	font-size: 14px;
 	letter-spacing: 1px;
 }
 #projects > a:hover {
@@ -156,6 +156,7 @@ a:hover{
 	height: 100%;
 	top: 0;
 	background: rgba(0,0,0,0.7);
+	overflow: scroll;
 }
 #overlay > div {
 	width: 70%;
@@ -167,8 +168,9 @@ a:hover{
 }
 #overlay #overlay-content {
 	position: relative;
-	margin: 10px 2px;
-
+}
+#overlay #overlay-content > * {
+	padding: 10px;
 }
 #overlay #overlay-controls {
 	text-align: center;
@@ -182,13 +184,10 @@ a:hover{
 	display: block;
 	background-color: #7bd01d;
 	color: white;
-	margin: 2px 2px 0 0;
+	margin-left: 2px;
 	height: 40px;
 	width: 40px;
 	float: left;
-    -webkit-box-shadow: 1px 1px 0 black;
-    -moz-box-shadow: 1px 1px 0 black;
-    box-shadow: 1px 1px 0 black;
 }
 #overlay a.overlay-control:hover {
     background-color:#17a357;
@@ -201,4 +200,42 @@ a:hover{
 }
 .right {
 	float:right;
+}
+.pitch {
+	font-style: italic;
+	margin-top: 10px;
+	font-weight: bold;
+}
+h3 {
+	margin: 15px 0 7px;
+	font-size: 22px;
+	letter-spacing: 2px;
+	border-bottom: 1px solid #17a357;
+	font-weight: bold;
+}
+h4 {
+	margin: 10px 0 5px;
+	font-size:17px;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+.w48 {
+	width: 48%;
+	margin: 0 1% 0 0;
+}
+.w48 + .w48 {
+	margin: 0 0 0 1%;
+}
+.bold {
+	font-weight: bold;
+}
+li {
+	list-style-image: url('../img/list-item.png');
+	list-style-position: inside;
+}
+.green {
+	color: #17a357;
+}
+.pt5 {
+	padding-top: 5px;
 }
