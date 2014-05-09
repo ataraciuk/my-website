@@ -2,7 +2,7 @@ var andrest = andrest || {};
 
 andrest.init = function() {
 	andrest.setDOMObjs();
-	andrest.email = 'contact@andrest.me';
+	andrest.email = 'info@andrest.me';
 	$('.myEmail').attr({href: 'mailto:'+andrest.email}).html(andrest.email);
 	window.onhashchange = function(){
 		var section = location.hash;
@@ -29,13 +29,14 @@ andrest.init = function() {
 				var prevHash = currElem.prev('a').attr('href') || $(andrest.DOM.projects[andrest.DOM.projects.length-1]).attr('href');
 				andrest.DOM.nextCtrl.attr('href',nextHash);
 				andrest.DOM.prevCtrl.attr('href',prevHash);
+				andrest.DOM.lastVimeos = andrest.DOM.overlayContent.find('iframe.vimeo');
+				console.log(andrest.DOM.lastVimeos);
 			});
 		}
 		andrest.DOM.lastVimeos.each(function(){
-			if(this.contentWindow && this.contentWindow.postMessage) this.contentWindow.postMessage({"method": "pause"}, 'http://player.vimeo.com');
+			if(this.contentWindow && this.contentWindow.postMessage) this.contentWindow.postMessage({"method": "pause"}, '*');
 		});
 		//andrest.DOM.lastVimeos = $(hash).find('iframe.vimeo');
-		andrest.DOM.lastVimeos = andrest.DOM.overlayContent.find('iframe.vimeo');
 		andrest.lastHash = hash;
 	};
 	window.onhashchange();
