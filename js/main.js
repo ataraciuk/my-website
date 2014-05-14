@@ -19,6 +19,7 @@ andrest.init = function() {
 		var hash = location.hash;
 		if(hash.length <= 1) {
 			andrest.DOM.overlay.fadeOut();
+			andrest.DOM.overlayContent.html('');
 		} else {
 			andrest.DOM.overlay.fadeIn();
 			andrest.DOM.overlayContent.fadeOut(andrest.fadeDur(), function(){
